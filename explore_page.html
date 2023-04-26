@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Images</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="script3.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+
+  <header>
+    <div class="navbar">
+       <ul>
+           <li><a href="homepage.html">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Contacts</a></li>
+           <li><a href="#">Search</a></li>
+           <div class="dropdown">
+               <button onclick="myFunction()" class="dropbtn">Menu ⮟</button>
+               <div id="myDropdown" class="dropdown-content">
+                 <a href="#">Sign in </a>
+                 <a href="airport_info.html">Airport info</a>
+                 <a href="explore_page.html">Explore </a>
+               </div>
+             </div>
+             
+       </ul>
+       
+       
+   </header>  
+
+
+  <body>
+    <h1>Explore Images</h1>
+    <form>
+      <label for="location">Enter a location:</label>
+      <input type="text" id="location" name="location" placeholder="e.g golden gate">
+      <input type="submit" id="submit" value="Search">
+    </form>
+
+    <section id="image-view">
+        
+    </section>
+  </body>
+</html>
+
