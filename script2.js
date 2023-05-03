@@ -1,6 +1,6 @@
 function onJson(json) {
     console.log('JSON ricevuto', json);
-    // Svuotiamo la libreria
+    
     const info_res = document.querySelector('#res');
     info_res.innerHTML = '';
     
@@ -19,9 +19,9 @@ function onJson(json) {
     const street_number = json.street_number;
     const street = street_name +' '+ street_number;
   
-      // div esterno
+      
       const section = document.createElement('div');
-      // tag interni per le varie info
+     
       const section_text = document.createElement('span');
       section_text.innerHTML = '<strong>Airport name:</strong> '+name+ '<br><br>' + 
                           '<strong>Location:</strong> '+location+ '<br><br>' +
@@ -64,9 +64,6 @@ fetch('https://airport-info.p.rapidapi.com/airport?iata='+value, options)
 
 
 
-	//.then(response => response.json())
-	//.then(response => console.log(response))
-	//.catch(err => console.error(err));
 }  
 
  
